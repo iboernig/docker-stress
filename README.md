@@ -42,4 +42,4 @@ OpenShift then pulls teh repository, starts a docker build and deploys the image
 
 If you need to tune the parameters you can do so by adding the environment variable to the deplyoment config. Either in the webconsole or by changing the deploymentconfig manually:
 
-    oc env dc/docker-stress CPU_LOAD=2 MEM_LOAD=1 MEM_SIZE=512M
+    oc set env dc/docker-stress CPU_LOAD=2 MEM_LOAD=1 MEM_SIZE=512M
